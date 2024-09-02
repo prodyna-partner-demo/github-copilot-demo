@@ -1,0 +1,19 @@
+{
+    "name": "Node.js & Python",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:0-18",
+    "features": {
+        "ghcr.io/devcontainers/features/python:1": {
+            "version": "3.9"
+        }
+    },
+    "extensions": [
+        "ms-python.python",
+        "ms-vscode.vscode-typescript-tslint-plugin",
+        "dbaeumer.vscode-eslint"
+    ],
+    "settings": {
+        "python.pythonPath": "/usr/local/bin/python3",
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "postCreateCommand": "npm install"
+}
